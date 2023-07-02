@@ -67,7 +67,7 @@ namespace GameTest.Health
             {
                 if (CanSpend(value))
                 {
-                    CurrentValue = value;
+                    CurrentValue -= value;
                 }
             }
 
