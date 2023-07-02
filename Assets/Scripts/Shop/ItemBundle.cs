@@ -74,9 +74,7 @@ namespace GameTest.Common
 
                 if (!Available)
                     break;
-            } 
-            
-            Debug.Log($"{_name} is available {Available}");
+            }  
         }
     }
 }

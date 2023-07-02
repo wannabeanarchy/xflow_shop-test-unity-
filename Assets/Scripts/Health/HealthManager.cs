@@ -52,7 +52,7 @@ namespace GameTest.Health
             if (properties == TypeProperties.PercentHealth)
             { 
                 int healthToSpend = CalculatePercentHealthValue(value / 100f); 
-                canSpend = CurrentValue >= healthToSpend;
+                canSpend = CurrentValue > healthToSpend;
             }
 
             return canSpend;
@@ -97,7 +97,7 @@ namespace GameTest.Health
         private int CalculatePercentHealthValue(float percent)
         {
             int currentHealth = CurrentValue;
-            return Mathf.RoundToInt(currentHealth * percent); 
+            return Mathf.CeilToInt(currentHealth * percent); 
         } 
     } 
 }
