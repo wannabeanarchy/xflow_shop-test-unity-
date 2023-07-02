@@ -1,4 +1,5 @@
 ﻿using GameTest.Common;
+using GameTest.Gold;
 using GameTest.Health;
 using GameTest.Rating;
 using GameTest.Shop;
@@ -16,14 +17,15 @@ namespace GameTest.UI
             foreach (ItemBundle item in ShopManager.Instance().ListItems)
             { 
                 ItemUI shopItem = Instantiate(_prefabItem, _containerItemsShop); 
-                shopItem.ButtonItem.onClick.AddListener(item.BuyItem);
                 shopItem.TextItem.text = item.Name;  
+                shopItem.ButtonItem.onClick.AddListener(item.BuyItem);
+             
+                item.Changed += shopItem.SetInteractable;
+             
+                HealthManager.Instance().Changed += item.CanBuy;
+                GoldManager.Instance().Changed += item.CanBuy;
+                RatingManager.Instance().Changed += item.CanBuy;
             }
-        }
-
-        private void BuyItem()
-        {
-            Debug.Log("Buy Item!");
-        }
+        } 
     }
 }

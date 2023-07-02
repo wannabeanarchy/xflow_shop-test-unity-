@@ -4,7 +4,7 @@ namespace GameTest.Core
 { 
 	public interface IReward
 	{
-		event Action<TypeProperties, int> OnRewardGiven;
+		event Action OnRewardGiven;
 		void Reward(TypeProperties properties, int value);
 	}
 }

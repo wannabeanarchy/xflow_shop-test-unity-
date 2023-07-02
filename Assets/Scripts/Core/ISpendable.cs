@@ -5,7 +5,7 @@ namespace GameTest.Core
 {
     public interface ISpendable 
     {  
-        event Action<TypeProperties, int> OnSpend;
+        event Action OnSpend;
         void Spend(TypeProperties properties, int value);
         bool CanSpend(TypeProperties properties, int value);
     } 

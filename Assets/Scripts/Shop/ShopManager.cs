@@ -10,21 +10,21 @@ namespace GameTest.Shop
         [SerializeField] private ShopItems _shopItems; 
         public List<ItemBundle>  ListItems => _shopItems.ListItems;
 
-        private List<IReward> _listRewards = new();
-        private List<ISpendable> _listSpendable = new();
+        private Dictionary<TypeProperties, IReward> _dictionaryRewards = new();
+        private Dictionary<TypeProperties, ISpendable> _dictionarySpendable = new();
 
-        public List<IReward> ListRewards => _listRewards;
-        public List<ISpendable> ListSpendable => _listSpendable;
+        public Dictionary<TypeProperties, IReward> DictionaryRewards => _dictionaryRewards;
+        public Dictionary<TypeProperties, ISpendable> DictionarySpendable => _dictionarySpendable;
         
-        public void AddReward(IReward reward)
+        public void AddReward(TypeProperties type, IReward reward)
         {
-            _listRewards.Add(reward);
+            _dictionaryRewards.Add(type, reward);
         }
          
-        public void AddSpendable(ISpendable spendable)
+        public void AddSpendable(TypeProperties type, ISpendable spendable)
         {
-            _listSpendable.Add(spendable);
-        }
- 
+            _dictionarySpendable.Add(type, spendable);
+        } 
+
     } 
 }

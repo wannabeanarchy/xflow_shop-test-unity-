@@ -1,3 +1,4 @@
+using GameTest.Core;
 using GameTest.Gold;
 using GameTest.Health;
 using GameTest.Rating;
@@ -12,13 +13,15 @@ public class GameLogic : MonoBehaviour
         GoldManager.Instance().CurrentValue = 500;
         RatingManager.Instance().CurrentValue = 50;
         
-        ShopManager.Instance().AddReward(HealthManager.Instance());
-        ShopManager.Instance().AddReward(GoldManager.Instance());
-        ShopManager.Instance().AddReward(RatingManager.Instance()); 
+        ShopManager.Instance().AddReward(TypeProperties.FixedHealth, HealthManager.Instance());
+        ShopManager.Instance().AddReward(TypeProperties.PercentHealth, HealthManager.Instance());
+        ShopManager.Instance().AddReward(TypeProperties.FixedGold, GoldManager.Instance());
+        ShopManager.Instance().AddReward(TypeProperties.FixedRating, RatingManager.Instance()); 
         
-        ShopManager.Instance().AddSpendable(HealthManager.Instance());
-        ShopManager.Instance().AddSpendable(GoldManager.Instance());
-        ShopManager.Instance().AddSpendable(RatingManager.Instance());
-         
+        ShopManager.Instance().AddSpendable(TypeProperties.FixedHealth, HealthManager.Instance());
+        ShopManager.Instance().AddSpendable(TypeProperties.PercentHealth, HealthManager.Instance());
+        ShopManager.Instance().AddSpendable(TypeProperties.FixedGold, GoldManager.Instance());
+        ShopManager.Instance().AddSpendable(TypeProperties.FixedRating, RatingManager.Instance());
+ 
     } 
 }

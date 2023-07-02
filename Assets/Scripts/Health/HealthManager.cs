@@ -53,8 +53,7 @@ namespace GameTest.Health
             return canSpend;
         }
 
-        public event Action<TypeProperties, int> OnRewardGiven;
-
+        public event Action OnRewardGiven;
         public void Reward(TypeProperties properties, int value)
         {
             if (properties == TypeProperties.FixedHealth)
@@ -67,9 +66,10 @@ namespace GameTest.Health
                 int healthToAdd = CalculatePercentHealthValue(value / 100f); 
                 CurrentValue += healthToAdd;  
             }
+            OnRewardGiven?.Invoke();
         }
         
-        public event Action<TypeProperties, int> OnSpend;
+        public event Action OnSpend;
         public void Spend(TypeProperties properties, int value)
         { 
             if (properties == TypeProperties.FixedHealth)
@@ -77,6 +77,7 @@ namespace GameTest.Health
                 if (CanSpend(properties, value))
                 {
                     CurrentValue -= value;
+                    OnSpend?.Invoke();
                 }
             }
 
@@ -87,8 +88,10 @@ namespace GameTest.Health
                 if (CanSpend(properties, healthToSpend))
                 {
                     CurrentValue -= healthToSpend;
+                    OnSpend?.Invoke();
                 }
             }
+            
         }
 
         private int CalculatePercentHealthValue(float percent)

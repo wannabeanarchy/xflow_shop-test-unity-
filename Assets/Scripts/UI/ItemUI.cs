@@ -10,6 +10,11 @@ namespace GameTest.UI
         [SerializeField] private Button _button;
 
         public Button ButtonItem => _button; 
-        public TMP_Text TextItem => _text; 
+        public TMP_Text TextItem => _text;
+
+        public void SetInteractable(bool available)
+        {
+            _button.interactable = available;
+        }
     }
 }

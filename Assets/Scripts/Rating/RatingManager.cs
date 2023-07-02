@@ -47,7 +47,7 @@ namespace GameTest.Rating
             return canSpend;
         }
 
-        public event Action<TypeProperties, int> OnRewardGiven;
+        public event Action OnRewardGiven;
         public void Reward(TypeProperties properties, int value)
         { 
             if (properties == TypeProperties.FixedRating)
@@ -56,7 +56,7 @@ namespace GameTest.Rating
             } 
         }
         
-        public event Action<TypeProperties, int> OnSpend;
+        public event Action OnSpend;
         public void Spend(TypeProperties properties, int value)
         {
             if (properties == TypeProperties.FixedRating)

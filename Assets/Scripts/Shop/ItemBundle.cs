@@ -18,23 +18,81 @@ namespace GameTest.Common
         private List<Bundle> _rewardProperties = new List<Bundle>();
 
         public string Name => _name;
- 
+
+        private bool _available; 
+  
+        public bool Available 
+        {
+            get
+            {
+                return _available;
+            }
+            set
+            {
+                if (_available != value)
+                {
+                    _available = value; 
+                    _innerChanged?.Invoke(_available);
+                }
+            }
+        }
+
+        private event Action<bool> _innerChanged;
+        public event Action<bool> Changed {
+            add 
+            {
+                _innerChanged += value;
+                value(true);
+            }
+            remove 
+            {
+                _innerChanged -= value;
+            }
+        }  
+
+        public void AddListenersForAvailable()
+        {
+            foreach (Bundle bundle in _priceProperties)
+            {
+                ISpendable spendable = ShopManager.Instance().DictionarySpendable[bundle.Type];
+                spendable.OnSpend += CanBuy;
+            }
+
+            foreach (Bundle bundle in _rewardProperties)
+            {
+                IReward reward = ShopManager.Instance().DictionaryRewards[bundle.Type]; 
+                reward.OnRewardGiven += CanBuy;
+            } 
+        }
+
+
         public void BuyItem()
         {   
             foreach (Bundle bundle in _priceProperties)
             {
-                foreach (ISpendable spendable in ShopManager.Instance().ListSpendable)
-                { 
-                    spendable.Spend(bundle.Type, bundle.Value); 
-                }
+                ISpendable spendable = ShopManager.Instance().DictionarySpendable[bundle.Type]; 
+                spendable.Spend(bundle.Type, bundle.Value);  
             }
+
             foreach (Bundle bundle in _rewardProperties)
-            { 
-                foreach (IReward reward in ShopManager.Instance().ListRewards)
-                { 
-                    reward.Reward(bundle.Type, bundle.Value); 
-                }
-            }
-        } 
+            {
+                IReward reward = ShopManager.Instance().DictionaryRewards[bundle.Type];
+                reward.Reward(bundle.Type, bundle.Value); 
+            } 
+        }
+
+        public void CanBuy()
+        { 
+            foreach (Bundle bundle in _priceProperties)
+            {
+                ISpendable spendable = ShopManager.Instance().DictionarySpendable[bundle.Type];
+                Available = spendable.CanSpend(bundle.Type, bundle.Value);
+
+                if (!Available)
+                    break;
+            } 
+            
+            Debug.Log($"{_name} is available {Available}");
+        }
     }
 }
