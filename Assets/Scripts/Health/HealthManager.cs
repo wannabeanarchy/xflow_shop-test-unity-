@@ -34,7 +34,12 @@ namespace GameTest.Health
             {
                 _innerChanged -= value;
             }
-        } 
+        }
+
+        public void InitManager(int value)
+        {
+            CurrentValue = value;
+        }
 
         public bool CanSpend(TypeProperties properties, int value)
         {

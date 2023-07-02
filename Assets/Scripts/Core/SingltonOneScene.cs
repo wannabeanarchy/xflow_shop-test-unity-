@@ -1,8 +1,9 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace GameTest.Core
 {
-    public class SingletonOneScene<T> : MonoBehaviour where T : MonoBehaviour
+    public class SingletonOneScene<T> : SerializedMonoBehaviour where T : SerializedMonoBehaviour
     { 
         protected static T _instance;
 

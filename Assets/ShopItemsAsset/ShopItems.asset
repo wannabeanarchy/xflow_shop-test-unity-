@@ -15,28 +15,52 @@ MonoBehaviour:
   ListItems:
   - _name: "\u0425\u043B\u0435\u0431"
     _priceProperties:
-    - Type: 3
-      Value: 22
+    - Type: 0
+      Value: 25
     _rewardProperties:
-    - Type: 3
-      Value: 100
+    - Type: 2
+      Value: 2
     - Type: 3
       Value: 20
   - _name: "\u041C\u043E\u043B\u043E\u043A\u043E"
-    _priceProperties: []
-    _rewardProperties: []
+    _priceProperties:
+    - Type: 1
+      Value: 25
+    _rewardProperties:
+    - Type: 0
+      Value: 3
   - _name: "\u041F\u043E\u043C\u0438\u0434\u043E\u0440\u044B"
-    _priceProperties: []
-    _rewardProperties: []
+    _priceProperties:
+    - Type: 3
+      Value: 10
+    _rewardProperties:
+    - Type: 2
+      Value: 2
   - _name: "\u041E\u0433\u0443\u0440\u0446\u044B"
-    _priceProperties: []
-    _rewardProperties: []
+    _priceProperties:
+    - Type: 0
+      Value: 15
+    _rewardProperties:
+    - Type: 1
+      Value: 2
   - _name: "\u0421\u0430\u043B\u044F\u043C\u0438"
-    _priceProperties: []
-    _rewardProperties: []
+    _priceProperties:
+    - Type: 0
+      Value: 22
+    _rewardProperties:
+    - Type: 3
+      Value: 6
   - _name: "\u041A\u043E\u043D\u0444\u044D\u0442\u044B"
-    _priceProperties: []
-    _rewardProperties: []
+    _priceProperties:
+    - Type: 1
+      Value: 32
+    _rewardProperties:
+    - Type: 0
+      Value: 5
   - _name: "\u0411\u0430\u043D\u0430\u043D\u044B"
-    _priceProperties: []
-    _rewardProperties: []
+    _priceProperties:
+    - Type: 2
+      Value: 50
+    _rewardProperties:
+    - Type: 0
+      Value: 4
