@@ -1,0 +1,16 @@
+{
+    "name": "Rating",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b359cf40dcfbfa54cbfb7c7624738098"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

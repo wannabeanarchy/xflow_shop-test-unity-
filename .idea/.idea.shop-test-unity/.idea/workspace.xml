@@ -6,27 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1ce661c2-66b3-45dc-a73f-1442f18bd0dc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.shop-test-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.shop-test-unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Item.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Item.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/IReward.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/IReward.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/ISpendable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ISpendable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gold/GoldManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gold/GoldManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gold/GoldReward.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gold/GoldReward.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health/HealthManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Health/HealthManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health/HealthReward.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health/HealthReward.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health/PercentHealthReward.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health/PercentHealthReward.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rating/RatingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rating/RatingManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rating/RatingReward.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rating/RatingReward.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shop/ItemBundle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shop/ItemBundle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shop/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shop/ShopManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PlayerStatsUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PlayerStatsUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ShopUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ShopUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ShopItemsAsset/ShopItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ShopItemsAsset/ShopItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +17,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/SingltonOneScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shop/ShopItems.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PlayerStatsUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../xflow_shop-test-unity/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2Ryeq77wqmynXBiJnS5G7nSylrK" />
   <component name="ProjectViewState">
@@ -91,10 +74,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="7112">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="7112" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -117,6 +100,9 @@
       <workItem from="1688244836413" duration="2009000" />
       <workItem from="1688247542584" duration="5221000" />
       <workItem from="1688289449588" duration="9081000" />
+      <workItem from="1688299956805" duration="41000" />
+      <workItem from="1688300041086" duration="108000" />
+      <workItem from="1688300171324" duration="9000" />
     </task>
     <servers />
   </component>
@@ -134,157 +120,49 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Shop/ItemBundle.cs</url>
           <line>27</line>
-          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Shop\ItemBundle.cs" initialLine="27" containingFunctionPresentation="Method 'BuyItem'">
-            <startOffsets>
-              <option value="696" />
-            </startOffsets>
-            <endOffsets>
-              <option value="739" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Shop\ItemBundle.cs" initialLine="27" containingFunctionPresentation="Method 'BuyItem'" />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Shop/ItemBundle.cs</url>
           <line>31</line>
-          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Shop\ItemBundle.cs" initialLine="31" containingFunctionPresentation="Method 'BuyItem'">
-            <startOffsets>
-              <option value="843" />
-            </startOffsets>
-            <endOffsets>
-              <option value="884" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Shop\ItemBundle.cs" initialLine="31" containingFunctionPresentation="Method 'BuyItem'" />
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Health/HealthManager.cs</url>
-          <line>65</line>
-          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Health\HealthManager.cs" initialLine="65" containingFunctionPresentation="Method 'Spend'">
-            <startOffsets>
-              <option value="1708" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1753" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Health/HealthManager.cs</url>
-          <line>73</line>
-          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Health\HealthManager.cs" initialLine="73" containingFunctionPresentation="Method 'Spend'">
-            <startOffsets>
-              <option value="1910" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1957" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Rating/RatingManager.cs</url>
           <line>55</line>
-          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Rating\RatingManager.cs" initialLine="55" containingFunctionPresentation="Method 'Spend'">
-            <startOffsets>
-              <option value="1367" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1412" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Rating\RatingManager.cs" initialLine="55" containingFunctionPresentation="Method 'Spend'" />
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Health/HealthManager.cs</url>
-          <line>67</line>
-          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Health\HealthManager.cs" initialLine="67" containingFunctionPresentation="Method 'Spend'">
-            <startOffsets>
-              <option value="1784" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1804" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Health/HealthManager.cs</url>
-          <line>69</line>
-          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Health\HealthManager.cs" initialLine="69" containingFunctionPresentation="Method 'Spend'">
-            <startOffsets>
-              <option value="1843" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1864" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Rating/RatingManager.cs</url>
           <line>46</line>
-          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Rating\RatingManager.cs" initialLine="46" containingFunctionPresentation="Method 'Reward'">
-            <startOffsets>
-              <option value="1090" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1135" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Rating\RatingManager.cs" initialLine="46" containingFunctionPresentation="Method 'Reward'" />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Rating/RatingManager.cs</url>
           <line>48</line>
-          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Rating\RatingManager.cs" initialLine="48" containingFunctionPresentation="Method 'Reward'">
-            <startOffsets>
-              <option value="1166" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1188" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Rating\RatingManager.cs" initialLine="48" containingFunctionPresentation="Method 'Reward'" />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Rating/RatingManager.cs</url>
           <line>19</line>
-          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Rating\RatingManager.cs" initialLine="19" containingFunctionPresentation="Property 'CurrentValue'">
-            <startOffsets>
-              <option value="414" />
-            </startOffsets>
-            <endOffsets>
-              <option value="435" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Rating\RatingManager.cs" initialLine="19" containingFunctionPresentation="Property 'CurrentValue'" />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Rating/RatingManager.cs</url>
           <line>21</line>
-          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Rating\RatingManager.cs" initialLine="21" containingFunctionPresentation="Property 'CurrentValue'">
-            <startOffsets>
-              <option value="474" />
-            </startOffsets>
-            <endOffsets>
-              <option value="490" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Rating\RatingManager.cs" initialLine="21" containingFunctionPresentation="Property 'CurrentValue'" />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Rating/RatingManager.cs</url>
           <line>22</line>
-          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Rating\RatingManager.cs" initialLine="22" containingFunctionPresentation="Property 'CurrentValue'">
-            <startOffsets>
-              <option value="512" />
-            </startOffsets>
-            <endOffsets>
-              <option value="536" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="D:\gamz\shop-test-unity\Assets\Scripts\Rating\RatingManager.cs" initialLine="22" containingFunctionPresentation="Property 'CurrentValue'" />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
