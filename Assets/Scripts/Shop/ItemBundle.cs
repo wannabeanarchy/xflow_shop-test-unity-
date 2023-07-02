@@ -48,23 +48,7 @@ namespace GameTest.Common
             {
                 _innerChanged -= value;
             }
-        }  
-
-        public void AddListenersForAvailable()
-        {
-            foreach (Bundle bundle in _priceProperties)
-            {
-                ISpendable spendable = ShopManager.Instance().DictionarySpendable[bundle.Type];
-                spendable.OnSpend += CanBuy;
-            }
-
-            foreach (Bundle bundle in _rewardProperties)
-            {
-                IReward reward = ShopManager.Instance().DictionaryRewards[bundle.Type]; 
-                reward.OnRewardGiven += CanBuy;
-            } 
-        }
-
+        }   
 
         public void BuyItem()
         {   
