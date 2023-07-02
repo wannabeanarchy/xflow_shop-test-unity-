@@ -7,5 +7,6 @@ namespace GameTest.Core
     {  
         event Action<TypeProperties, int> OnSpend;
         void Spend(TypeProperties properties, int value);
+        bool CanSpend(TypeProperties properties, int value);
     } 
 }

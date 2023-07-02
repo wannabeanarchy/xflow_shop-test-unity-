@@ -36,9 +36,15 @@ namespace GameTest.Rating
                 _innerChanged -= value;
             }
         } 
-        public bool CanSpend(int value)
+        public bool CanSpend(TypeProperties properties, int value)
         {
-            return CurrentValue >= value;
+            bool canSpend = false;
+            if (properties == TypeProperties.FixedRating)
+            {
+                canSpend =  CurrentValue >= value;
+            }
+
+            return canSpend;
         }
 
         public event Action<TypeProperties, int> OnRewardGiven;
@@ -55,7 +61,7 @@ namespace GameTest.Rating
         {
             if (properties == TypeProperties.FixedRating)
             {
-                if (CanSpend(value))
+                if (CanSpend(properties, value))
                 {
                     CurrentValue -= value;
                 }

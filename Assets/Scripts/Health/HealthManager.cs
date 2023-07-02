@@ -36,9 +36,21 @@ namespace GameTest.Health
             }
         } 
 
-        public bool CanSpend(int value)
+        public bool CanSpend(TypeProperties properties, int value)
         {
-            return CurrentValue >= value;
+            bool canSpend = false;
+            if (properties == TypeProperties.FixedHealth)
+            {
+                canSpend =  CurrentValue >= value;
+            }
+
+            if (properties == TypeProperties.PercentHealth)
+            { 
+                int healthToSpend = CalculatePercentHealthValue(value / 100f); 
+                canSpend = CurrentValue >= healthToSpend;
+            }
+
+            return canSpend;
         }
 
         public event Action<TypeProperties, int> OnRewardGiven;
@@ -51,11 +63,8 @@ namespace GameTest.Health
             }
 
             if (properties == TypeProperties.PercentHealth)
-            {
-                float percent = value / 100f;
-                int currentHealth = HealthManager.Instance().CurrentValue;
-                int healthToAdd = Mathf.RoundToInt(currentHealth * percent);
-
+            { 
+                int healthToAdd = CalculatePercentHealthValue(value / 100f); 
                 CurrentValue += healthToAdd;  
             }
         }
@@ -65,24 +74,28 @@ namespace GameTest.Health
         { 
             if (properties == TypeProperties.FixedHealth)
             {
-                if (CanSpend(value))
+                if (CanSpend(properties, value))
                 {
                     CurrentValue -= value;
                 }
             }
 
             if (properties == TypeProperties.PercentHealth)
-            {
-                float percent = value / 100f;
-                int currentHealth = HealthManager.Instance().CurrentValue;
-                int healthToSpend = Mathf.RoundToInt(currentHealth * percent);
+            { 
+                int healthToSpend = CalculatePercentHealthValue(value / 100f);
 
-                if (CanSpend(healthToSpend))
+                if (CanSpend(properties, healthToSpend))
                 {
                     CurrentValue -= healthToSpend;
                 }
             }
         }
+
+        private int CalculatePercentHealthValue(float percent)
+        {
+            int currentHealth = HealthManager.Instance().CurrentValue;
+            return Mathf.RoundToInt(currentHealth * percent); 
+        } 
     } 
 }
 

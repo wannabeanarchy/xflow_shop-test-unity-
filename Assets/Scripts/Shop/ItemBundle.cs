@@ -9,8 +9,8 @@ namespace GameTest.Common
     [Serializable]
     public class ItemBundle
     {
-        [SerializeField] private string _name;  
-        
+        [SerializeField] private string _name;
+
         [SerializeField]
         private List<Bundle> _priceProperties = new List<Bundle>();
         

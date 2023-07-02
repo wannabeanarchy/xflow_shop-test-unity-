@@ -35,12 +35,18 @@ namespace GameTest.Gold
                 _innerChanged -= value;
             }
         }
- 
-
-        public bool CanSpend(int value)
+  
+        public bool CanSpend(TypeProperties properties, int value)
         {
-            return CurrentValue >= value;
+            bool canSpend = false;
+            if (properties == TypeProperties.FixedGold)
+            {
+                canSpend =  CurrentValue >= value;
+            }
+
+            return canSpend;
         }
+
 
         public event Action<TypeProperties, int> OnRewardGiven;
         public void Reward(TypeProperties properties, int value)
@@ -56,7 +62,7 @@ namespace GameTest.Gold
         {
             if (properties == TypeProperties.FixedGold)
             {
-                if (CanSpend(value))
+                if (CanSpend(properties, value))
                 {
                     CurrentValue -= value;
                 }
