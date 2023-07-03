@@ -1,4 +1,6 @@
-﻿using GameTest.Gold;
+﻿using System;
+using GameTest.Core;
+using GameTest.Gold;
 using GameTest.Health;
 using GameTest.Rating;
 using GameTest.Shop;
@@ -19,11 +21,7 @@ namespace GameTest.UI
                 shopItem.TextItem.text = item.Name;  
                 shopItem.ButtonItem.onClick.AddListener(item.BuyItem);
              
-                item.Changed += shopItem.SetInteractable;
-             
-                HealthManager.Instance().Changed += item.CanBuy;
-                GoldManager.Instance().Changed += item.CanBuy;
-                RatingManager.Instance().Changed += item.CanBuy;
+                item.Changed += shopItem.SetInteractable; 
             }
         } 
     }

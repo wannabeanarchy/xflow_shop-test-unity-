@@ -1,3 +1,4 @@
+using System;
 using GameTest.Core;
 using GameTest.Gold;
 
@@ -7,7 +8,7 @@ namespace GameTest.Rating
     {
         public void Reward(int value)
         {  
-            GoldManager.Instance(). CurrentValue += value;
-        }
+            GoldManager.Instance(). CurrentValue += value; 
+        } 
     }
 }

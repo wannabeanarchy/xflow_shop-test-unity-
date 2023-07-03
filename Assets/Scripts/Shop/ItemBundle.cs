@@ -9,9 +9,12 @@ namespace GameTest.Shop
     public class ItemBundle  
     {
         [SerializeField] private string _name;
-        [SerializeField] private List<BundleSpendable> _priceProperties = new ();
+        [SerializeField] public List<BundleSpendable> _priceProperties = new ();
         [SerializeField] private List<BundleReward> _rewardProperties = new ();
-     
+
+        public List<BundleSpendable> ListPricesProperties => _priceProperties;
+        public List<BundleReward> ListRewardProperties => _rewardProperties;
+
         private bool _available; 
 
         public string Name => _name;
@@ -25,7 +28,7 @@ namespace GameTest.Shop
             set
             {
                 if (_available != value)
-                {
+                { 
                     _available = value; 
                     _innerChanged?.Invoke(_available);
                 }
@@ -61,7 +64,7 @@ namespace GameTest.Shop
         public void CanBuy()
         { 
             foreach (BundleSpendable bundle in _priceProperties)
-            { 
+            {   
                 Available = bundle.Spendable.CanSpend(bundle.Value);
 
                 if (!Available)

@@ -1,3 +1,4 @@
+using System;
 using GameTest.Core;
 using GameTest.Gold;
 
@@ -10,11 +11,24 @@ namespace GameTest.Rating
             return GoldManager.Instance().CurrentValue >= value;
         }
 
+        public event Action OnSpended
+        {
+            add 
+            {
+                GoldManager.Instance().Changed += value;
+                value();
+            }
+            remove 
+            {
+                GoldManager.Instance().Changed -= value;
+            }
+        } 
+
         public void Spend(int value)
         {
             if (CanSpend(value))
             {
-                GoldManager.Instance().CurrentValue -= value;
+                GoldManager.Instance().CurrentValue -= value; 
             }
         }
     }
