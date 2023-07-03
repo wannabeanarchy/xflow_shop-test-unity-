@@ -2,7 +2,7 @@
 using GameTest.Core;
 using Sirenix.Serialization;
 
-namespace GameTest.Common
+namespace GameTest.Core
 {
     [Serializable]
     public struct BundleReward

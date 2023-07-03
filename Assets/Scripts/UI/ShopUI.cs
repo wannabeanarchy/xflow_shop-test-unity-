@@ -1,5 +1,4 @@
-﻿using GameTest.Common;
-using GameTest.Gold;
+﻿using GameTest.Gold;
 using GameTest.Health;
 using GameTest.Rating;
 using GameTest.Shop;

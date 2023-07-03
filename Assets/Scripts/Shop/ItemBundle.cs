@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using GameTest.Core;
-using GameTest.Shop; 
 using UnityEngine;
 
-namespace GameTest.Common
+namespace GameTest.Shop
 {
     [Serializable]
     public class ItemBundle  
     {
         [SerializeField] private string _name;
-        [SerializeField] private List<BundleSpendable> _priceProperties = new List<BundleSpendable>();
-        [SerializeField] private List<BundleReward> _rewardProperties = new List<BundleReward>();
+        [SerializeField] private List<BundleSpendable> _priceProperties = new ();
+        [SerializeField] private List<BundleReward> _rewardProperties = new ();
      
         private bool _available; 
 
@@ -63,7 +62,7 @@ namespace GameTest.Common
         { 
             foreach (BundleSpendable bundle in _priceProperties)
             { 
-                Available = bundle.Spendable.CanSpend( bundle.Value);
+                Available = bundle.Spendable.CanSpend(bundle.Value);
 
                 if (!Available)
                     break;

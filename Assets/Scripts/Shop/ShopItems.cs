@@ -3,7 +3,7 @@ using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
 
-namespace GameTest.Common
+namespace GameTest.Shop
 {
     [CreateAssetMenu(fileName = "ShopItems", menuName = "Shop/ShopItems")]
     public class ShopItems : SerializedScriptableObject
