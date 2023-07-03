@@ -12,55 +12,322 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62638b613a0c4edc9eece75d96b415ee, type: 3}
   m_Name: ShopItems
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: ListItems
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[GameTest.Common.ItemBundle, Shop]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 7
+      Data: 1|GameTest.Common.ItemBundle, Shop
+    - Name: _name
+      Entry: 1
+      Data: Item1
+    - Name: _priceProperties
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[GameTest.Common.BundleSpendable,
+        Core]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: GameTest.Common.BundleSpendable, Core
+    - Name: Spendable
+      Entry: 7
+      Data: 3|GameTest.Rating.GoldSpendable, Gold
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Value
+      Entry: 3
+      Data: 30
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _rewardProperties
+      Entry: 7
+      Data: 4|System.Collections.Generic.List`1[[GameTest.Common.BundleReward, Core]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: GameTest.Common.BundleReward, Core
+    - Name: Reward
+      Entry: 7
+      Data: 5|GameTest.Rating.FixedHealthReward, Health
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Value
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: GameTest.Common.BundleReward, Core
+    - Name: Reward
+      Entry: 7
+      Data: 6|GameTest.Rating.RatingReward, Rating
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Value
+      Entry: 3
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 7|GameTest.Common.ItemBundle, Shop
+    - Name: _name
+      Entry: 1
+      Data: Item2
+    - Name: _priceProperties
+      Entry: 7
+      Data: 8|System.Collections.Generic.List`1[[GameTest.Common.BundleSpendable,
+        Core]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: GameTest.Common.BundleSpendable, Core
+    - Name: Spendable
+      Entry: 7
+      Data: 9|GameTest.Rating.RatingSpendable, Rating
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Value
+      Entry: 3
+      Data: 30
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _rewardProperties
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[GameTest.Common.BundleReward, Core]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: GameTest.Common.BundleReward, Core
+    - Name: Reward
+      Entry: 7
+      Data: 11|GameTest.Rating.GoldReward, Gold
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Value
+      Entry: 3
+      Data: 32
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 12|GameTest.Common.ItemBundle, Shop
+    - Name: _name
+      Entry: 1
+      Data: Item3
+    - Name: _priceProperties
+      Entry: 7
+      Data: 13|System.Collections.Generic.List`1[[GameTest.Common.BundleSpendable,
+        Core]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: GameTest.Common.BundleSpendable, Core
+    - Name: Spendable
+      Entry: 7
+      Data: 14|GameTest.Rating.PercentHealthSpendable, Health
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Value
+      Entry: 3
+      Data: 15
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _rewardProperties
+      Entry: 7
+      Data: 15|System.Collections.Generic.List`1[[GameTest.Common.BundleReward, Core]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: GameTest.Common.BundleReward, Core
+    - Name: Reward
+      Entry: 7
+      Data: 16|GameTest.Rating.GoldReward, Gold
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Value
+      Entry: 3
+      Data: 50
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 17|GameTest.Common.ItemBundle, Shop
+    - Name: _name
+      Entry: 1
+      Data: Item4
+    - Name: _priceProperties
+      Entry: 7
+      Data: 18|System.Collections.Generic.List`1[[GameTest.Common.BundleSpendable,
+        Core]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: GameTest.Common.BundleSpendable, Core
+    - Name: Spendable
+      Entry: 7
+      Data: 19|GameTest.Rating.RatingSpendable, Rating
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Value
+      Entry: 3
+      Data: 23
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _rewardProperties
+      Entry: 7
+      Data: 20|System.Collections.Generic.List`1[[GameTest.Common.BundleReward, Core]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: GameTest.Common.BundleReward, Core
+    - Name: Reward
+      Entry: 7
+      Data: 21|GameTest.Rating.PercentHealthReward, Health
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Value
+      Entry: 3
+      Data: 32
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   ListItems:
-  - _name: "\u0425\u043B\u0435\u0431"
+  - _name: Item1
     _priceProperties:
-    - Type: 0
-      Value: 50
+    - Value: 30
     _rewardProperties:
-    - Type: 2
-      Value: 10
-    - Type: 3
-      Value: 20
-  - _name: "\u041C\u043E\u043B\u043E\u043A\u043E"
+    - Value: 5
+    - Value: 10
+  - _name: Item2
     _priceProperties:
-    - Type: 1
-      Value: 25
+    - Value: 30
     _rewardProperties:
-    - Type: 0
-      Value: 3
-  - _name: "\u041F\u043E\u043C\u0438\u0434\u043E\u0440\u044B"
+    - Value: 32
+  - _name: Item3
     _priceProperties:
-    - Type: 3
-      Value: 10
+    - Value: 15
     _rewardProperties:
-    - Type: 2
-      Value: 2
-  - _name: "\u041E\u0433\u0443\u0440\u0446\u044B"
+    - Value: 50
+  - _name: Item4
     _priceProperties:
-    - Type: 0
-      Value: 15
+    - Value: 23
     _rewardProperties:
-    - Type: 1
-      Value: 2
-  - _name: "\u0421\u0430\u043B\u044F\u043C\u0438"
-    _priceProperties:
-    - Type: 0
-      Value: 22
-    _rewardProperties:
-    - Type: 3
-      Value: 6
-  - _name: "\u041A\u043E\u043D\u0444\u044D\u0442\u044B"
-    _priceProperties:
-    - Type: 1
-      Value: 32
-    _rewardProperties:
-    - Type: 0
-      Value: 5
-  - _name: "\u0411\u0430\u043D\u0430\u043D\u044B"
-    _priceProperties:
-    - Type: 2
-      Value: 50
-    _rewardProperties:
-    - Type: 0
-      Value: 4
+    - Value: 32

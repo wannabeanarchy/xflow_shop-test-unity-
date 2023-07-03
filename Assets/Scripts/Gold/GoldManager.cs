@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GameTest.Gold
 {
-    public class GoldManager : SingletonOneScene<GoldManager>, ISpendable, IReward
+    public class GoldManager : SingletonOneScene<GoldManager> 
     {
         private int _gold; 
         private event Action _innerChanged;
@@ -39,37 +39,7 @@ namespace GameTest.Gold
         public void InitManager(int value)
         {
             CurrentValue = value;
-        }
-
-        public bool CanSpend(TypeProperties properties, int value)
-        {
-            bool canSpend = false;
-            if (properties == TypeProperties.FixedGold)
-            {
-                canSpend =  CurrentValue >= value;
-            }
-
-            return canSpend;
-        }
-        
-        public void Reward(TypeProperties properties, int value)
-        {
-            if (properties == TypeProperties.FixedGold)
-            { 
-                CurrentValue += value;
-            } 
         } 
-        
-        public void Spend(TypeProperties properties, int value)
-        {
-            if (properties == TypeProperties.FixedGold)
-            {
-                if (CanSpend(properties, value))
-                {
-                    CurrentValue -= value;
-                }
-            } 
-        }
     } 
 }
 

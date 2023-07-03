@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GameTest.Health
 {
-    public class HealthManager : SingletonOneScene<HealthManager>, ISpendable, IReward
+    public class HealthManager : SingletonOneScene<HealthManager> 
     {  
         private int _health; 
         private event Action _innerChanged;
@@ -39,62 +39,9 @@ namespace GameTest.Health
         public void InitManager(int value)
         {
             CurrentValue = value;
-        }
+        } 
 
-        public bool CanSpend(TypeProperties properties, int value)
-        {
-            bool canSpend = false;
-            if (properties == TypeProperties.FixedHealth)
-            {
-                canSpend =  CurrentValue >= value;
-            }
-
-            if (properties == TypeProperties.PercentHealth)
-            { 
-                int healthToSpend = CalculatePercentHealthValue(value / 100f); 
-                canSpend = CurrentValue > healthToSpend;
-            }
-
-            return canSpend;
-        }
- 
-        public void Reward(TypeProperties properties, int value)
-        {
-            if (properties == TypeProperties.FixedHealth)
-            {
-                CurrentValue += value;  
-            }
-
-            if (properties == TypeProperties.PercentHealth)
-            { 
-                int healthToAdd = CalculatePercentHealthValue(value / 100f); 
-                CurrentValue += healthToAdd;  
-            } 
-        }
-    
-        public void Spend(TypeProperties properties, int value)
-        { 
-            if (properties == TypeProperties.FixedHealth)
-            {
-                if (CanSpend(properties, value))
-                {
-                    CurrentValue -= value; 
-                }
-            }
-
-            if (properties == TypeProperties.PercentHealth)
-            { 
-                int healthToSpend = CalculatePercentHealthValue(value / 100f);
-
-                if (CanSpend(properties, healthToSpend))
-                {
-                    CurrentValue -= healthToSpend;
-                }
-            }
-            
-        }
-
-        private int CalculatePercentHealthValue(float percent)
+        public int CalculatePercentHealthValue(float percent)
         {
             int currentHealth = CurrentValue;
             return Mathf.CeilToInt(currentHealth * percent); 

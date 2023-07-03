@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GameTest.Rating
 {
-    public class RatingManager : SingletonOneScene<RatingManager>, ISpendable, IReward
+    public class RatingManager : SingletonOneScene<RatingManager> 
     {
         private int _rating;
         private event Action _innerChanged;
@@ -40,37 +40,7 @@ namespace GameTest.Rating
         public void InitManager(int value)
         {
             CurrentValue = value;
-        }
-
-        public bool CanSpend(TypeProperties properties, int value)
-        {
-            bool canSpend = false;
-            if (properties == TypeProperties.FixedRating)
-            {
-                canSpend =  CurrentValue >= value;
-            }
-
-            return canSpend;
-        }
- 
-        public void Reward(TypeProperties properties, int value)
-        { 
-            if (properties == TypeProperties.FixedRating)
-            {
-                CurrentValue += value;
-            } 
-        }
-         
-        public void Spend(TypeProperties properties, int value)
-        {
-            if (properties == TypeProperties.FixedRating)
-            {
-                if (CanSpend(properties, value))
-                {
-                    CurrentValue -= value;
-                }
-            } 
-        }
+        } 
     } 
 }
 
